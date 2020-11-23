@@ -9,22 +9,43 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35758c', endColorstr='#31a0cc', GradientType=1 );
 	*/
 
-body {
-    margin: 0;
-    padding: 0;
-    zoom:50%;
-	height:100vh;
-	background: url(../Img/fondos/brooklyn.jpg) no-repeat center top;
-	background-size: cover; 
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
 	font-family: sans-serif;
+	overflow: hidden;
+	box-sizing: border-box;
+	background: url(../Img/fondos/brooklyn.jpg) no-repeat center top;
+	background-size: cover;
 }
-.auth{
-	display:inline-block;
+
+/*-----------------------------*/
+
+.pag {
+	/* pag */
+	/*fija la imagen fuera del scroll*/
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	/*centrar elementos*/
+	display: flex;
+	/*align-items: center;*/
+	justify-content: center;
 }
-.registrer{
-	display:none;
+
+.auth {
+	display: inline-block;
 }
-.auth, .registrer{
+
+.registrer {
+	display: none;
+}
+
+.auth, .registrer {
 	width: 320px;
 	height: 450px;
 	background: #000;
@@ -33,56 +54,50 @@ body {
 	left: 50%;
 	position: absolute;
 	transform: translate(-50%, -50%);
-	box-sizing: border-box;	
+	box-sizing: border-box;
 	padding: 70px 30px;
-	opacity:0.9;
-	border-radius:50px
-	filter:alpha(opacity=0.9);
+	opacity: 0.9;
+	border-radius: 20px
 }
 
-.auth .avatar, .registrer .avatar{
+/*----------------------------*/
+
+.auth .avatar, .registrer .avatar {
 	width: 300px;
 	height: 150px;
 	position: absolute;
 	top: -75px;
 	left: calc(27% - 80px)
 }
-.auth h1 , .registrer h1{
+
+.auth h1, .registrer h1 {
 	padding: 0;
 	margin: 0 0 20px;
 	text-align: center;
 	font-size: 100%;
 }
-.auth form, .registrer form{
-	padding-top:30px;
+
+.auth form, .registrer form {
+	padding-top: 30px;
 }
-/*#menu_auth h1{
-	padding: 0;
-	display: block;
-	margin: 0;
-	font-weight: bold;
-}*/
-.auth input, .registrer input{
+
+.auth input, .registrer input {
 	width: 100%;
 	margin-bottom: 20px;
 }
-.auth input[type="number"],
-.auth input[type="password"], 
-.registrer input[type="text"],
-.registrer input[type="number"],
-.registrer input[type="password"]{
+
+.auth input[type="number"], .auth input[type="password"], .registrer input[type="text"], .registrer input[type="number"], .registrer input[type="password"] {
 	border: none;
 	border-bottom: 1px solid #FFF;
 	background: transparent;
 	outline: none;
 	height: 40px;
 	color: #FFF;
-	background:transparent;
+	background: transparent;
 	font-size: 16px;
-
 }
-.auth input[type="submit"],
-.registrer input[type="submit"]{
+
+.auth input[type="submit"], .registrer input[type="submit"] {
 	border: none;
 	outline: none;
 	height: 40px;
@@ -91,111 +106,14 @@ body {
 	font-size: 18px;
 	border-radius: 20px;
 }
-.auth a, .registrer a{
+
+.auth a, .registrer a {
 	text-decoration: none;
 	font-size: 12px;
 	line-height: 20px;
 	color: darkgray;
 }
-.auth a:hover, .registrer a:hover{
+
+.auth a:hover, .registrer a:hover {
 	color: #FFF;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* make sidebar nav vertical 
-@media screen and (min-width: 108px) {
-	
-  .sidebar-nav .navbar .navbar-collapse {
-    padding: 0;
-    max-height: none;
-  }
-  .sidebar-nav .navbar ul {
-    float: none;
-    display: block;
-  }
-  .sidebar-nav .navbar li {
-    float: none;
-    display: block;
-  }
-  .sidebar-nav .navbar li a {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-	
-body
-  {
-    overflow-x: scroll;
-    white-space: nowrap;
-    background-size: 250% 2000px;
-	width:70%;
-	zoom:10%;
-
-  }
-menu{
-	float: center;
-	width: 100%;
-	font-size:8px;
-}
-
-section
-{
-	float:center;
-	width:100%;
-}
-
-
-
-aside
-{
-	float:center;
-	width:100%
-	
-}
-
-}
-
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-

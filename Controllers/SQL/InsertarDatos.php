@@ -1,7 +1,15 @@
-<?php
+<?php	
+##### PRECONDICIONES ####
+#** arg_numIdPerson => only number, 11char
+#** arg_password => varchar 10char, 4number
+#** arg_numIdProduct => only hexdec, 100char
+
+## VARIABLES INICIALES ####
+# externos
 require_once ('../../Models/Class_conexion.php');
 require_once ('../../Models/Class_consultas.php');
-	
+
+# iniciar variables
 $mensaje = null;
 
 if (count($_POST['arg_nombre']) > 0 && count($_POST['arg_apodo']) > 0 && count($_POST['arg_perfilLaboral']) > 0 && count($_POST['arg_pais']) > 0 && count($_POST['arg_fechaNatal']) > 0 && count($_POST['arg_correo']) > 0 && count($_POST['arg_tipoId']) > 0 && count($_POST['arg_numId']) > 0 && count($_POST['arg_telefono']) > 0 && count($_POST['arg_sexo']) > 0 && count($_POST['arg_psw']) > 0 && count($_POST['arg_psw2']) > 0 && count($_POST['arg_resp1']) > 0 && count($_POST['arg_resp2']) > 0 )
