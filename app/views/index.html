@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>ARControllers ::..</title>
+    <link rel="stylesheet" href="/fwork/css/accesorios.css">
+    <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css">
+    <%- include('Partials/head.html') %>
+</head>
+
+<body>
+
+    <%- include('Partials/progressBar.html') %>
+        <%- include('Partials/subWind_alert_auth_cant.html') %>
+            <%- include('Partials/subWind_alert_auth_success.html') %>
+                <%- include('Partials/subWind_alert_conexWS_cant.html') %>
+                    <%- include('Partials/subWind_alert_conexWS_closeclean.html') %>
+                        <%- include('Partials/subWind_alert_conexWS_cortada.html') %>
+
+                            <div class="pag">
+                                <section class="auth" id="auth_index">
+                                    <%- include('Partials/section_auth.html') %>
+                                </section>
+                                <section class="registrer" id="registrer_index">
+                                    <%- include('Partials/section_registr.html') %>
+                                </section>
+                            </div>
+                            <script type="text/javascript" src="/fwork/js/config.js"></script>
+                            <script type="text/javascript" src="/fwork/js/login.js"></script>
+</body>
+
+</html>

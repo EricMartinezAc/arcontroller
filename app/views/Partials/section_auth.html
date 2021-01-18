@@ -1,0 +1,15 @@
+<img class="avatar" src="/fwork/Img/logo/logo_512x415.png" alt="LOGO">
+<form class="login100-form validate-form " method="POST" action="Controllers/SQL/AuthUsuario.php">
+    <input type="text" maxlength="10" id="UsuarioLogin" name="UsuarioLogin" value=""
+        class="form-control input_text_index" autocomplete="off" placeholder="INGRESE NICKNAME">
+    <input type="password" maxlength="10" name="pswLogin" id="pswLogin" class="form-control input_text_index" value=""
+        autocomplete="off" placeholder="INGRESA TU CONTRASEÑA"><br>
+    <input class="btn btn-success" type="button" onclick="login(
+        document.getElementById('UsuarioLogin').value,
+        document.getElementById('pswLogin').value
+    )" value="CONTINUAR"><br>
+    <a href="#" onclick="setVisibleform_register_index()">
+        aún no estas registrado? REGISTRATE AQUÍ
+    </a><br>
+    <a href="#">Recuperar contraseña</a>
+</form>

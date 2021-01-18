@@ -1,0 +1,119 @@
+/*
+	background: rgba(53,117,140,1);
+	background: -moz-linear-gradient(left, rgba(53,117,140,1) 0%, rgba(41,184,229,1) 50%, rgba(49,160,204,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(53,117,140,1)), color-stop(50%, rgba(41,184,229,1)), color-stop(100%, rgba(49,160,204,1)));
+	background: -webkit-linear-gradient(left, rgba(53,117,140,1) 0%, rgba(41,184,229,1) 50%, rgba(49,160,204,1) 100%);
+	background: -o-linear-gradient(left, rgba(53,117,140,1) 0%, rgba(41,184,229,1) 50%, rgba(49,160,204,1) 100%);
+	background: -ms-linear-gradient(left, rgba(53,117,140,1) 0%, rgba(41,184,229,1) 50%, rgba(49,160,204,1) 100%);
+	background: linear-gradient(to right, rgba(53,117,140,1) 0%, rgba(41,184,229,1) 50%, rgba(49,160,204,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35758c', endColorstr='#31a0cc', GradientType=1 );
+	*/
+
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: sans-serif;
+	overflow: hidden;
+	box-sizing: border-box;
+	background: url(../Img/fondos/brooklyn.jpg) no-repeat center top;
+	background-size: cover;
+}
+
+/*-----------------------------*/
+
+.pag {
+	/* pag */
+	/*fija la imagen fuera del scroll*/
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	/*centrar elementos*/
+	display: flex;
+	/*align-items: center;*/
+	justify-content: center;
+}
+
+.auth {
+	display: inline-block;
+}
+
+.registrer {
+	display: none;
+}
+
+.auth, .registrer {
+	width: 320px;
+	height: 450px;
+	background: #000;
+	color: #FFF;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+	opacity: 0.9;
+	border-radius: 20px
+}
+
+/*----------------------------*/
+
+.auth .avatar, .registrer .avatar {
+	width: 200px;
+	height: 150px;
+	position: absolute;
+	top: -75px;
+	left: calc(30% - 40px)
+}
+
+.auth h1, .registrer h1 {
+	padding: 0;
+	margin: 0 0 20px;
+	text-align: center;
+	font-size: 100%;
+}
+
+.auth form, .registrer form {
+	padding-top: 30px;
+}
+
+.auth input, .registrer input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.auth input[type="text"], .auth input[type="password"], .registrer input[type="text"], .registrer input[type="text"], .registrer input[type="password"] {
+	border: none;
+	border-bottom: 1px solid #FFF;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #FFF;
+	background: transparent;
+	font-size: 16px;
+}
+
+.auth input[type="button"], .registrer input[type="button"] {
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #B80F22;
+	color: #FFF;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.auth a, .registrer a {
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgray;
+}
+
+.auth a:hover, .registrer a:hover {
+	color: #FFF;
+}
